@@ -66,7 +66,7 @@ void drivePID(int masterPower) {
       motorSet(LEFT_M_FRONT, -masterPower);
       motorSet(RIGHT_M_FRONT, slavePower);
 
-      delay(300);                     // control loop needs enough time to gather
+      delay(200);                     // control loop needs enough time to gather
                                       // data to base corrections on, to fast no effect,
                                       // to slow the robot will zig zag
                                       // Note: PWM can not run faster then 60Hz

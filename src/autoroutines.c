@@ -10,14 +10,29 @@
 #include "manipulator.h"
 #include "lift.h"
 #include "auto.h"
+#include "chassis.h"
+#include "lift.h"
+#include "shooter.h"
 
 void compAutoRedRight(){
   // All the veraious autonomous commands for the Competition, Red Sqaure
   // Right position go here.  THen this function is called in auto.c the autonomous()
   // function based on some selector input.
-  driveForDistancePID(30, 60);     // for 10 meter = 394" at speed 60
-  pivotTurn(0, 30, 90);            // turn at seed 30 for 90 degree angle right turn
-  driveForDistancePID(12, 50);     // After turn drive a bit more forward
+  driveForDistancePID(100, 60);     // for 10 meter = 394" at speed 60
+  pivotTurn(0, 50, 85);            // Turn 90 degrees at speed 60
+  driveForDistancePID(40, 60);
+  liftMove(50);
+  delay(2);
+  liftMove(0);  // drive for 30 inches
+  pivotTurn(0, 60, 85);
+  liftMoveAngle(60, 0);
+  pivotTurn(1, 60, 85);
+//  pivotTurn(1, 60, 80);            // Turn 90 degrees at speed 60
+//  driveForDistancePID(30, 60);     // drive for 30 inches
+//  liftMoveAngle(50, 600);           //Lift arm up at 50 speed and 600/4000
+//  pivotTurn(1, 60, 80);            // Turn 90 degrees at speed 60
+//  driveForDistancePID(30, 60);     // drive for 30 inches
+//  liftMoveAngle(50, 0);
 }
 
 void testAutoDrive(){
