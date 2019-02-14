@@ -24,11 +24,42 @@
             "-fdiagnostics-color",
             "-std=gnu99",
             "-o",
-            "bin/opcontrol.c.o",
-            "src\\opcontrol.c"
+            "bin/intake.c.o",
+            "src\\intake.c"
         ],
         "directory": "C:\\Users\\wattj\\Documents\\GitHub\\cortex-MET419master",
-        "file": "src\\opcontrol.c"
+        "file": "src\\intake.c"
+    },
+    {
+        "arguments": [
+            "clang++",
+            "-c",
+            "-target",
+            "armv7ar-none-none-eabi",
+            "-fno-ms-extensions",
+            "-fno-ms-compatibility",
+            "-fno-delayed-template-parsing",
+            "-isystemc:\\program files\\pros\\toolchain\\usr\\bin\\../lib/gcc/arm-none-eabi/7.2.1/include",
+            "-isystemc:\\program files\\pros\\toolchain\\usr\\bin\\../lib/gcc/arm-none-eabi/7.2.1/include-fixed",
+            "-isystemc:\\program files\\pros\\toolchain\\usr\\bin\\../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include",
+            "-isystem./include",
+            "-iquote./include/./",
+            "-mthumb",
+            "-mcpu=cortex-m3",
+            "-mlittle-endian",
+            "-Os",
+            "-ffunction-sections",
+            "-fsigned-char",
+            "-fomit-frame-pointer",
+            "-fsingle-precision-constant",
+            "-fdiagnostics-color",
+            "-std=gnu99",
+            "-o",
+            "bin/manipulator.c.o",
+            "src\\manipulator.c"
+        ],
+        "directory": "C:\\Users\\wattj\\Documents\\GitHub\\cortex-MET419master",
+        "file": "src\\manipulator.c"
     },
     {
         "arguments": [
@@ -86,11 +117,11 @@
             "-fdiagnostics-color",
             "-std=gnu99",
             "-o",
-            "bin/intake.c.o",
-            "src\\intake.c"
+            "bin/init.c.o",
+            "src\\init.c"
         ],
         "directory": "C:\\Users\\wattj\\Documents\\GitHub\\cortex-MET419master",
-        "file": "src\\intake.c"
+        "file": "src\\init.c"
     },
     {
         "arguments": [
@@ -179,11 +210,11 @@
             "-fdiagnostics-color",
             "-std=gnu99",
             "-o",
-            "bin/manipulator.c.o",
-            "src\\manipulator.c"
+            "bin/chassis.c.o",
+            "src\\chassis.c"
         ],
         "directory": "C:\\Users\\wattj\\Documents\\GitHub\\cortex-MET419master",
-        "file": "src\\manipulator.c"
+        "file": "src\\chassis.c"
     },
     {
         "arguments": [
@@ -241,41 +272,10 @@
             "-fdiagnostics-color",
             "-std=gnu99",
             "-o",
-            "bin/init.c.o",
-            "src\\init.c"
+            "bin/opcontrol.c.o",
+            "src\\opcontrol.c"
         ],
         "directory": "C:\\Users\\wattj\\Documents\\GitHub\\cortex-MET419master",
-        "file": "src\\init.c"
-    },
-    {
-        "arguments": [
-            "clang++",
-            "-c",
-            "-target",
-            "armv7ar-none-none-eabi",
-            "-fno-ms-extensions",
-            "-fno-ms-compatibility",
-            "-fno-delayed-template-parsing",
-            "-isystemc:\\program files\\pros\\toolchain\\usr\\bin\\../lib/gcc/arm-none-eabi/7.2.1/include",
-            "-isystemc:\\program files\\pros\\toolchain\\usr\\bin\\../lib/gcc/arm-none-eabi/7.2.1/include-fixed",
-            "-isystemc:\\program files\\pros\\toolchain\\usr\\bin\\../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include",
-            "-isystem./include",
-            "-iquote./include/./",
-            "-mthumb",
-            "-mcpu=cortex-m3",
-            "-mlittle-endian",
-            "-Os",
-            "-ffunction-sections",
-            "-fsigned-char",
-            "-fomit-frame-pointer",
-            "-fsingle-precision-constant",
-            "-fdiagnostics-color",
-            "-std=gnu99",
-            "-o",
-            "bin/chassis.c.o",
-            "src\\chassis.c"
-        ],
-        "directory": "C:\\Users\\wattj\\Documents\\GitHub\\cortex-MET419master",
-        "file": "src\\chassis.c"
+        "file": "src\\opcontrol.c"
     }
 ]
